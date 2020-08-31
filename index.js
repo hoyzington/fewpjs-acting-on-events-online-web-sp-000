@@ -16,10 +16,10 @@ document.addEventListener("keydown", function(e) {
 });
 
 function moveDodgerRight() {
-  let rightNumbers = dodger.style.right.replace("px", "");
-  let right = parseInt(rightNumbers, 10);
+  let leftNumbers = dodger.style.left.replace("px", "");
+  let left = parseInt(leftNumbers, 10);
  
-  if (right < 400) {
+  if (left < 360) {
     dodger.style.right = `${right + 10}px`;
   }
 }
